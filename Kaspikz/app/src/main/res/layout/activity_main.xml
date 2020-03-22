@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        tools:actionBarNavMode="tabs"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-63dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="428dp"
+            android:layout_height="185dp"
+            android:translationY="-25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041"
+            app:srcCompat="@drawable/rassrochka" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="256dp"
+            android:background="@android:color/background_light"
+            android:text="Более 200 000 товаров по лучшим ценам"
+            android:textColor="@android:color/holo_blue_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="78dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/prosto" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iphone 11 Pro Max 512Gb Space Gray"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.183"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="56dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Цена 694 900"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="188dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="В кредит 37 875 тг Х 24 мес"
+            android:textColor="@android:color/holo_orange_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="98dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginRight="96dp"
+            android:buttonTint="#14e00d"
+            android:checked="false"
+            android:text="Купить"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:background="@android:color/background_light"
+            android:drawableTop="@drawable/ic_supermarket"
+            android:text="Магазин"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:background="@android:color/background_light"
+            android:drawableTop="@drawable/ic_bill"
+            android:text="Платежи"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@+id/button4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="104dp"
+            android:background="@android:color/background_light"
+            android:drawableTop="@drawable/ic_pin"
+            android:text="Red"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/button7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button6" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="104dp"
+            android:background="@android:color/background_light"
+            android:drawableTop="@drawable/ic_qrcode"
+            android:text="Kaspi QR"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/button9"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="104dp"
+            android:background="@android:color/background_light"
+            android:drawableTop="@drawable/ic_registered"
+            android:text="Гид"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/button8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button9" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="104dp"
+            android:background="@android:color/background_light"
+            android:drawableTop="@drawable/ic_profile"
+            android:text="Maps"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button7" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:background="@android:color/background_light"
+            android:drawableTop="@drawable/ic_arrow"
+            android:text="Переводы"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="97dp"
+            android:layout_height="76dp"
+            android:background="@android:color/background_light"
+            android:drawableTop="@drawable/ic_monitor"
+            android:text="Мой Банк"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@+id/button5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="МАГАЗИН НА KASPI.KZ"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button9"
+            app:layout_constraintVertical_bias="0.92" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
